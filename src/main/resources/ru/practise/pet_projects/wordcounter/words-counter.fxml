@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="657.0" style="-fx-background-color: #F0FFF0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.practise.pet_projects.wordcounter.Controller">
+   <children>
+      <Label alignment="TOP_CENTER" layoutY="-1.0" prefHeight="45.0" prefWidth="657.0" text="Онлайн счетчик слов в тексте">
+         <font>
+            <Font name="Sitka Heading Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="39.0" prefHeight="45.0" prefWidth="212.0" text="Знаков без пробелов">
+         <font>
+            <Font name="Sitka Heading Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="280.0" layoutY="39.0" prefHeight="45.0" prefWidth="204.0" text="Знаков с пробелами">
+         <font>
+            <Font name="Sitka Heading Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="513.0" layoutY="39.0" prefHeight="45.0" prefWidth="128.0" text="Слов">
+         <font>
+            <Font name="Sitka Heading Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="symbolWithoutSpaceCounter" alignment="CENTER" layoutX="51.0" layoutY="70.0" prefHeight="45.0" prefWidth="204.0" text="0">
+         <font>
+            <Font name="Sitka Heading Italic" size="42.0" />
+         </font>
+      </Label>
+      <Label fx:id="symbolWithSpaceCounter" alignment="CENTER" layoutX="280.0" layoutY="70.0" prefHeight="46.0" prefWidth="204.0" text="0">
+         <font>
+            <Font name="Sitka Heading Italic" size="42.0" />
+         </font>
+      </Label>
+      <Label fx:id="wordsCounter" alignment="CENTER" layoutX="490.0" layoutY="70.0" prefHeight="46.0" prefWidth="93.0" text="0">
+         <font>
+            <Font name="Sitka Heading Italic" size="42.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="inputText" layoutX="38.0" layoutY="121.0" nodeOrientation="LEFT_TO_RIGHT" onKeyTyped="#CounterWordForInputText" prefHeight="507.0" prefWidth="585.0" promptText="Enter something here..." wrapText="true" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="121.0">
+         <font>
+            <Font name="Sitka Heading Bold Italic" size="20.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>
